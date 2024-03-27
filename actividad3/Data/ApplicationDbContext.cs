@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using actividad3.Models;
+using actividad3.Models; // Asegúrate de incluir la referencia al espacio de nombres donde se encuentra la clase empleado
 
 namespace actividad3.Data
 {
@@ -11,7 +9,7 @@ namespace actividad3.Data
         {
         }
 
-        public DbSet<Empleado> Empleados { get; set; } // DbSet para la entidad Empleado
+        public DbSet<empleados> empleados { get; set; } // DbSet para la entidad Empleado
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

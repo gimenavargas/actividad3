@@ -1,14 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Registrar Empleado";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Registrar Empleado</h1>
 </div>
 
+<form method="post" action="/empleados/Registrar">
 
-<form method="post" action="/Empleados/Registrar">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="Nombre" required><br>
 
